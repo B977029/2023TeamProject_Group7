@@ -17,8 +17,6 @@ public class DialogueSystem : MonoBehaviour
 	{
 		anim.SetBool("IsOpen", true);
 
-		Invoke("Test", 5f);
-
 		sentences.Clear();
 
 		Name.text = info.name;

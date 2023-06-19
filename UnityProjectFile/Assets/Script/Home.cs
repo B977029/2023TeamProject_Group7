@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class Home : MonoBehaviour
 {
-    public GameObject player;
+    public Dialogue info;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        var system = FindAnyObjectByType<DialogueSystem>();
+        system.Begin(info);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position+ new Vector3(5, 0, -10);
+        
     }
 }

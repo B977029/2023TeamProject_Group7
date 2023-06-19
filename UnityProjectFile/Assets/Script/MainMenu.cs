@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     }
     public void ClickStart()
     {
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Home");
     }
     
     public void ClickOption()
