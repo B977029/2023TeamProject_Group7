@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerMove : MonoBehaviour
 {
     int speed;
     float xMove;
     bool isfront;
+    float minposition=-17;
+    float maxposition=83;
+    private Vector3 pos;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,10 @@ public class PlayerMove : MonoBehaviour
 
         xMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         this.transform.Translate(new Vector3(xMove, 0, 0));
+
+        pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, minposition, maxposition);   
+        transform.position = pos;
     }
 
     void Turn()
