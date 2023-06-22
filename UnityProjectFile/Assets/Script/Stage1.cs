@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Home : MonoBehaviour
+public class Stage1 : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +18,8 @@ public class Home : MonoBehaviour
     }
 
     //Debug
-    public void D_Stage1()
+    public void D_Home()
     {
-        SceneManager.LoadScene("Stage1");
-    }
-    public void D_Stage2()
-    {
-        SceneManager.LoadScene("Stage2");
-    }
-
-    public void D_Stage3()
-    {
-        SceneManager.LoadScene("Stage3");
+        SceneManager.LoadScene("Home");
     }
 }
