@@ -36,7 +36,7 @@ public class PlayerMove : MonoBehaviour
 
         xMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         this.transform.Translate(new Vector3(xMove, 0, 0));
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+
         pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, minposition, maxposition);   
         transform.position = pos;

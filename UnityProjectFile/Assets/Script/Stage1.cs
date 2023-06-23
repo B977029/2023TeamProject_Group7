@@ -25,7 +25,6 @@ public class Stage1 : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "Move1-2")
@@ -40,15 +39,6 @@ public class Stage1 : MonoBehaviour
             GameObject.Find("UI").transform.Find("text").gameObject.SetActive(true);
 
         }
-=======
-    private void OnTriggerStay2D(Collider2D collision)
-    {       
-        if (collision.gameObject.name == GameObject.Find("UI").transform.Find("gosari").name)
-        {           
-            GameObject.Find("UI").transform.Find("text").gameObject.SetActive(true);
-            
-        }       
->>>>>>> Stashed changes
     }
 
     private void OnTriggerExit2D(Collider2D collision)
