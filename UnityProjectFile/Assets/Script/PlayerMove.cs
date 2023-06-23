@@ -8,8 +8,8 @@ public class PlayerMove : MonoBehaviour
     int speed;
     float xMove;
     bool isfront;
-    float minposition=-17;
-    float maxposition=83;
+    float minposition=-20;
+    float maxposition=20;
     private Vector3 pos;
 
     // Start is called before the first frame update
