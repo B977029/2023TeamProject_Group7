@@ -796,7 +796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178790070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2278,11 +2278,10 @@ MonoBehaviour:
   info:
     names:
     - "\uC591\uC591"
-    - "\uC544\uADC0"
+    - "\uD770\uB465"
     sentences:
-    - "\uB108\uC758 \uBA38\uB9AC\uC5D0 \uB2EC\uB9B0\uAC8C \uD544\uC694\uD55C\uB370
-      \uC904\uC218\uC788\uB2C8?"
-    - "\uC0C8\uAC78 \uAC00\uC838\uB2E4 \uC8FC\uBA74 \uC904\uAC8C"
+    - "\uC774\uAC83 \uC880 \uBA39\uC5B4\uBCF4\uC9C0 \uC54A\uC744\uB798?"
+    - "\uADF8\uB798"
   Type: 8
 --- !u!114 &828880983
 MonoBehaviour:
