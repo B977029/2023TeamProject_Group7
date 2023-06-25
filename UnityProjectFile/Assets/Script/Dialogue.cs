@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue
 {
-	public string name;
+	//public string name;
+	public List<string> names;
 	public List<string> sentences;
 }

@@ -8,9 +8,13 @@ public class PlayerMove : MonoBehaviour
     int speed;
     float xMove;
     bool isfront;
-    float minposition=-20;
-    float maxposition=20;
+
+    public float minposition=-20;
+    public float maxposition=(float)66.34;
+    public double minyposition;
     private Vector3 pos;
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +40,11 @@ public class PlayerMove : MonoBehaviour
 
         xMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         this.transform.Translate(new Vector3(xMove, 0, 0));
+        animator.SetFloat("Speed", Mathf.Abs(xMove));
 
         pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, minposition, maxposition);   
+        pos.x = Mathf.Clamp(pos.x, minposition, maxposition);
+        pos.y = Mathf.Clamp(pos.y, (float)minyposition, (float)minyposition);
         transform.position = pos;
     }
 
